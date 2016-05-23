@@ -12,6 +12,11 @@ var express = require('express');
 // for more info, see: https://www.npmjs.com/package/cfenv
 var cfenv = require('cfenv');
 
+///////////////////////////
+// you MUST change the host route to match your application name
+var callback_url = 'https://asm-security-001.mybluemix.net/auth/sso/callback';
+///////////////////////////
+
 // create a new express server
 var app = express();
 
