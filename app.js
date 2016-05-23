@@ -112,7 +112,7 @@ app.get('/auth/sso/callback',function(req,res,next) {
           })(req,res,next);
         });
 
-
+// -- commnetaires
 app.get('/hello', ensureAuthenticated, function(req, res) {
              res.send('Hello, '+ req.user['id'] + '!'); });
 
